@@ -64,13 +64,22 @@
         "output": "HTML",
         "preset": "rich"
       },
-      "customField": "plugin::ckeditor.CKEditor"
+      "customField": "plugin::ckeditor.CKEditor",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "typeblogs": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::typeblog.typeblog",
       "mappedBy": "blogs"
+    },
+    "view": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
